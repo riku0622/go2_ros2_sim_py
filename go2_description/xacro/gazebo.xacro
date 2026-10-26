@@ -293,6 +293,8 @@
                 <visualize>false</visualize>
                 <update_rate>10</update_rate>
                 <camera>
+                    <!-- rgbd_cameraはcamera_info_topicタグを無視し、常に<topic>/camera_infoへ出す
+                         (/${robot_name}/arm_cam/camera_info。実機検証で確認済み) -->
                     <horizontal_fov>1.518</horizontal_fov>
                     <image>
                         <format>R8G8B8</format>
